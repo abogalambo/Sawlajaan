@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Sawlajaan</title>
-  
-  <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.js"></script>
-  <script type="text/javascript" src="js/sawlajaan.js"></script>
-  
-  <style type="text/css">
-    #input {width: 40%; height: 300px; padding: 10px; margin: 20px;}
-    #output {width: 40%; height: 300px; font-size:20px; padding: 10px; margin: 20px;}
-    body{text-align: center;}
-  </style>
-  
-</head>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Sawlajaan</title>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="js/sawlajaan.js"></script>
+    
+    <style type="text/css">
+      #input {width: 40%; height: 300px; padding: 10px; margin: 20px;}
+      #output {width: 40%; height: 300px; font-size:20px; padding: 10px; margin: 20px;}
+      #container{text-align: center; width: 100%;}
+    </style>
+    
+  </head>
   <body style="">
-    <textarea id="input"></textarea>
-    <textarea dir="rtl" id="output"></textarea>
+    <div id="container">
+      <textarea id="input"></textarea>
+      <textarea dir="rtl" id="output"></textarea>
+    </div>
+    <h1>Rules :</h1>
+    <ul>
+      <li>Letters: A, b, t, th, j, 7, 5, d, z', r, z, s, sh, S, D, T, Z', 3, g, f, q, k, l, m, n, h, w, y</li>
+      <li>Tashkeel: letter + a , letter + e/i, letter + o/u</li>
+      <li>Taa marboota: t'</li>
+      <li>Tanween: uN, aN, iN/eN</li>
+      <li>madd: aa, ee, oo</li>
+      <li>Alef with hamza: A, E, O or U</li>
+      <li>Alef without hamza: a at the start of a word</li>
+      <li>Alef maqsoora: Y</li>
+      <li>Hamza's: 2, _2, @/@2</li>
+      <li>Shadda: letter + *</li>
+      <li>waw aljamaa3a: w-a / oo-a</li>
+      <li>bel: be-al</li>
+      <li>combined letters when ignoring tashkeel e.g. seen-haa: s-h</li>
+    </ul>
   </body>
 </html>
