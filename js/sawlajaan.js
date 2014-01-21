@@ -216,9 +216,16 @@ $(document).ready(function($) {
 	
     var input = $('textarea#input');
     var output = $('textarea#output');
+    var initialText = "\
+AhlaaN wa sahlaaN bekum\n\
+\n\
+# Sawlajaan Adaat'uN tusaa3iduka 3laY kitaabat'i al3arabiy*at'i be7oroofiN laateeney*at'iN\n\
+\n\
+# w ymknk An tktb b3laamaat altshkeel Aw bdoonhaa";
+    input.html(initialText);
+    output.val(parser.processText(initialText));
 	$(input).keyup(function(){
-		var text = $(this).val();
-		output.val(parser.processText(text));
+		output.val(parser.processText($(this).val()));
 	});
 });
 
