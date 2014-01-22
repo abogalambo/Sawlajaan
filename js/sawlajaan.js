@@ -217,6 +217,9 @@ $(document).ready(function($) {
     var input = $('textarea#input');
     var output = $('textarea#output');
     var initialText = "\
+besmi all*ahi alr*a7mani alr*a7eemi\n\
+bsm allh alr7mn alr7ym\n\
+\n\
 AhlaaN wa sahlaaN bekum\n\
 \n\
 # Sawlajaan Adaat'uN tusaa3iduka 3laY kitaabat'i al3arabiy*at'i be7oroofiN laateeney*at'iN\n\
