@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Sawlajaan</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
     
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.js"></script>
     <script type="text/javascript" src="js/sawlajaan.js"></script>
@@ -17,33 +18,38 @@
     </script>
     
     <style type="text/css">
-      #input {width: 40%; height: 300px; padding: 10px; margin: 20px;}
-      #output {width: 40%; height: 300px; font-size:20px; padding: 10px; margin: 20px;}
-      #container{text-align: center; width: 100%;}
+      #input {height: 300px; font-size:20px; padding: 10px; width:100%;}
+      #output {height: 300px; font-size:20px; padding: 10px; width:100%;}
+      .title{text-align: center; width: 100%; margin-bottom: 35px;}
+      .container{margin-top: 30px;}
     </style>
     
   </head>
-  <body style="">
-    <div id="container">
-      <h1>Sawlajaan صَوْلَجَانٌ</h1>
-      <textarea id="input"></textarea>
-      <textarea dir="rtl" id="output"></textarea>
+  <body>
+    <div class="well container">
+    <h1 class="title">Sawlajaan صَوْلَجَانٌ</h1>
+    <div class="row">
+      <div class="col-md-6 "><textarea class="form-control" id="input"></textarea></div>
+      <div class="col-md-6"><textarea class="form-control" id="output" dir="rtl"></textarea></div>
     </div>
-    <h1>Rules :</h1>
-    <ul>
-      <li>Letters: A, b, t, th, j, 7, 5, d, z', r, z, s, sh, S, D, T, Z', 3, g, f, q, k, l, m, n, h, w, y</li>
-      <li>Tashkeel: letter + a , letter + e/i, letter + o/u</li>
-      <li>Taa marboota: t'</li>
-      <li>Tanween: uN, aN, iN/eN</li>
-      <li>madd: aa, ee, oo</li>
-      <li>Alef with hamza: A, E, O or U</li>
-      <li>Alef without hamza: a at the start of a word</li>
-      <li>Alef maqsoora: Y</li>
-      <li>Hamza's: 2, _2, @/@2</li>
-      <li>Shadda: letter + *</li>
-      <li>waw aljamaa3a: w-a / oo-a</li>
-      <li>bel: be-al</li>
-      <li>combined letters when ignoring tashkeel e.g. seen-haa: s-h</li>
-    </ul>
+    <div id="rules">
+      <h1>Rules :</h1>
+      <dl class="dl-horizontal">
+        <dt>Letters:</dt><dd> A, b, t, th, j, 7, 5, d, z', r, z, s, sh, S, D, T, Z', 3, g, f, q, k, l, m, n, h, w, y</dd>
+        <dt>Tashkeel:</dt><dd> letter + a , letter + e/i, letter + o/u</dd>
+        <dt>Taa marboota:</dt><dd> t'</dd>
+        <dt>Tanween:</dt><dd> uN, aN, iN/eN</dd>
+        <dt>madd:</dt><dd> aa, ee, oo</dd>
+        <dt>Alef with hamza:</dt><dd> A, E, O or U</dd>
+        <dt>Alef without hamza:</dt><dd> a at the start of a word</dd>
+        <dt>Alef maqsoora:</dt><dd> Y</dd>
+        <dt>Hamza's:</dt><dd> 2, _2, @/@2</dd>
+        <dt>Shadda:</dt><dd> letter + *</dd>
+        <dt>waw aljamaa3a:</dt><dd> w-a / oo-a</dd>
+        <dt>bel:</dt><dd> be-al</dd>
+        <dt>combined letters: </dt><dd> when ignoring tashkeel e.g. seen-haa: s-h</dd>
+      </dl>
+    </div>
+  </div>
   </body>
 </html>
