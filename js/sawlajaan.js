@@ -184,7 +184,7 @@ function constructHash(mode) {
     "h": {"value": "ه","final": true},
     "w": {"value": "و","final": true},
     "y": {"value": "ي","final": true},
-    "Y": {"value": "ى","final": true},
+    "Y": {"value": "َى","final": true},
     "t'": {"value": "ة","final": true},
 // madd and tashkeel
     "Aa": {"value": "آ"},

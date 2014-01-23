@@ -13,6 +13,7 @@
       #output {height: 600px; font-size:18px; padding: 10px; width:100%;}
       .title{text-align: center; width: 100%; margin-bottom: 35px;}
       .container{margin-top: 30px;}
+      table{text-align: center;}
     </style>
     
     <script>
@@ -53,22 +54,108 @@ Ataman#aY An yakoona mufeedaaN. be-altwfeeq :)
     </div>
     <div id="rules">
       <h1>Rules :</h1>
-      <dl class="dl-horizontal">
-        <dt>Letters:</dt><dd> A, b, t, th, j, 7, 5, d, z', r, z, s, sh, S, D, T, Z, 3, g, f, q, k, l, m, n, h, w, y</dd>
-        <dt>Tashkeel:</dt><dd> letter + a , letter + e/i, letter + o/u</dd>
-        <dt>Taa marboota:</dt><dd> t'</dd>
-        <dt>Tanween:</dt><dd> uN, aN, iN/eN</dd>
-        <dt>madd:</dt><dd> aa, ee, oo</dd>
-        <dt>Alef with hamza:</dt><dd> A, E, O or U</dd>
-        <dt>Alef without hamza:</dt><dd> a at the start of a word</dd>
-        <dt>Alef maqsoora:</dt><dd> Y</dd>
-        <dt>Hamza's:</dt><dd> 2, _2, @/@2</dd>
-        <dt>Shadda:</dt><dd> letter + #</dd>
-        <dt>waw aljamaa3a:</dt><dd> w-a / oo-a</dd>
-        <dt>bel:</dt><dd> be-al</dd>
-        <dt>combined letters: </dt><dd> when ignoring tashkeel e.g. seen-haa: s-h</dd>
-        <dt>English: </dt><dd> {{ English and special characters @,#,-,... }} </dd>
-      </dl>
+      <div class="note">Rules are case sensitive</div>
+      <div class="table-responsive">
+        <table class="table table-striped table-condensed" dir="rtl">
+          <tr>
+            <td>الحُرُوف <br/>Letters</td>
+            <td colspan="12">
+              <table class="table">
+                <tr><td>أَ</td><td>ب</td><td>ت</td><td>ث</td><td>ج</td><td>ح</td><td>خ</td><td>د</td><td>ذ</td><td>ر</td><td>ز</td><td>س</td><td>ش</td><td>ص</td><td>ض</td><td>ط</td><td>ظ</td><td>ع</td><td>غ</td><td>ف</td><td>ق</td><td>ك</td><td>ل</td><td>م</td><td>ن</td><td>ه</td><td>و</td><td>ي</td></tr>
+
+                <tr><td>A</td><td>b</td><td>t</td><td>th</td><td>j</td><td>7</td><td>5</td><td>d</td><td>z'</td><td>r</td><td>z</td><td>s</td><td>sh</td><td>S</td><td>D</td><td>T</td><td>Z</td><td>3</td><td>g</td><td>f</td><td>q</td><td>k</td><td>l</td><td>m</td><td>n</td><td>h</td><td>w</td><td>y</td></tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>الحَرَكَات<br/>Tashkeel</td>
+            <td colspan="3" dir="ltr"> ba : بَ</td>
+            <td colspan="3" dir="ltr"> be / bi : بِ</td>
+            <td colspan="3" dir="ltr"> bo / bu : بُ </td>
+            <td colspan="3" dir="ltr"> b0 : بْ </td>
+          </tr>
+          <tr>
+            <td>المَدّ</td>
+            <td colspan="3" dir="ltr"> baa : بَا - naar: نَار</td>
+            <td colspan="3" dir="ltr"> bee : بِي - feel: فِيل</td>
+            <td colspan="3" dir="ltr"> boo :  بُو - noor: نُور</td>
+            <td colspan="3"></td>
+          </tr>
+          <tr>
+            <td>التَاءُ المَربُوطَةُ</td>
+            <td colspan="3" dir="ltr">t' : ة </td>
+            <td colspan="3" dir="ltr">madrasat' : مَدرَسَة </td>
+            <td colspan="3" dir="ltr">korat' : كُرَة </td>
+            <td colspan="3" dir="ltr">7aqeebat' : حَقِيبَة </td>
+          </tr>
+          <tr>
+            <td>التَنوِين <br/> Tanween</td>
+            <td colspan="3" dir="ltr">suN/soN : سٌ<br/>TefluN / TefloN : طِفلٌ</td>
+            <td colspan="3" dir="ltr">siN / seN : سٍ<br/>shamsiN / shamseN : شَمسٍ</td>
+            <td colspan="3" dir="ltr">saaN : ساً<br/>rajolaaN : رَجُلاً</td>
+            <td colspan="3" dir="ltr">saN : سً<br/>korat'aN : كُرَةً </td>
+          </tr>
+          <tr>
+            <td>أَلِف بهمزة<br/> Alef with hamza</td>
+            <td colspan="3" dir="ltr">Asad : أَسَد</td>
+            <td colspan="3" dir="ltr">Islaam / Eslaam : إسلَام</td>
+            <td colspan="3" dir="ltr">Oreedu / Ureedu : أُرِيدُ</td>
+            <td colspan="3"></td>
+          </tr>
+          <tr>
+            <td>أَلف الوصل<br/> Alef without hamza</td>
+            <td colspan="3" dir="rtl">a, e, o at the beginning of the word<br/>a, e, o فِي بدَاية الكلمة</td>
+            <td colspan="3" dir="ltr">alkitaab : الكِتَاب</td>
+            <td colspan="3" dir="ltr">esm : اسم</td>
+            <td colspan="3" dir="ltr">onZor : انظُر</td>
+          </tr>
+          <tr>
+            <td>أَلِف مقصُورَة<br/> Alef maqsoora</td>
+            <td colspan="3" dir="rtl">Capital Y</td>
+            <td colspan="3" dir="ltr">3alY : عَلَى</td>
+            <td colspan="3" dir="ltr">ramY : رَمَى</td>
+            <td colspan="3" dir="ltr">entahY : انتَهَى</td>
+          </tr>
+          <tr>
+            <td>الهَمَزَات <br/> Hamza</td>
+            <td colspan="3" dir="ltr"> 2 : ء - maa2: مَاء</td>
+            <td colspan="3" dir="ltr"> _2 : ئ - be_2r: بِئر</td>
+            <td colspan="3" dir="ltr"> @ / @2 :  ؤ - mo@tmr: مُؤتمر</td>
+            <td colspan="3"></td>
+          </tr>
+          <tr>
+            <td>شَدَّة<br/> Shadda</td>
+            <td colspan="3" dir="ltr"> s# : سّ</td>
+            <td colspan="3" dir="ltr"> 3am#aan : عَمَّان </td>
+            <td colspan="3" dir="ltr"> motaqad#em : مُتَقَدِّم</td>
+            <td colspan="3" dir="ltr"> ta3al#um :  تَعَلُّم</td>
+          </tr>
+          <tr>
+            <td>الكِتَابَة بِالإنجلِيزيَة<br/> Writing in English</td>
+            <td colspan="9" dir="rtl"> اكتب أَي شيء بين علَامتي {{ وَ }} وَ لَن يَتِمَّ تَحوِيله إلَى العربية <br/>Write anything between {{ and }} and it will not be converted to Arabic
+            </td>
+            <td colspan="3" dir="ltr">{{Hello 257 @,-?}}</td>
+          </tr>
+          <tr>
+            <td>الحُرُوفُ المركبة<br/> Composite letters</td>
+            <td colspan="9" dir="rtl"> استخدم - للفصل بين s و h حتَى لَا تترجم إلَى "ش"<br/> Use - to separate between s and h so they don't get converted to  "ش"
+            </td>
+            <td colspan="3" dir="ltr">s-hr : سهر | shr : شر</td>
+          </tr>
+          <tr>
+            <td>وَاو الجَمَاعَة<br/> waaw al-jamaa'a</td>
+            <td colspan="9" dir="rtl"> اكتُب وَاو الجَمَاعة هكذَا w-a / oo-a لتتجنب إضَافَة الفَتحَة إلَى الوَاو.<br/>Write waaw aljamaa'a like this w-a / oo-a to avoid adding " &nbspَ &nbsp" to the waaw.
+            </td>
+            <td colspan="3" dir="rtl">kataboo-a : كَتَبُوا ✓<br/>katabooaa : كَتَبُوَا ✖</td>
+          </tr>
+          <tr>
+            <td>ب + ال</td>
+            <td colspan="9" dir="rtl"> اكتُب ب + ال هكذَا be-al / b-al لتتجنب إضَافَة الفَتحَة إلَى البَاء.<br/>Write ب + ال like this be-al / b-al to avoid adding " &nbspَ &nbsp" to the baa.
+            </td>
+            <td colspan="3" dir="rtl">be-almnzl : بِالمنزل ✓<br/>baalmnzl : بَالمنزل ✖</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </div>
   </body>
