@@ -46,6 +46,7 @@ function decode_utf8(s) {
  		wordStart = true,
  		wordEnd = false,
  		value = "",
+        escaped = false,
  		hash = constructHash('test');
 
 for(key in hash){
@@ -59,20 +60,47 @@ for(key in hash){
          invalid = false;
          wordStart = true;
          wordEnd = false;
+         escaped = false,
          value = "";
      };
      
      var lookup = function(key){
-         var lookupKey = wordStart ? '^' + key : key ;
-         var entry = hash[lookupKey] || hash[key];
-         var delimiter = false;
-         if(entry){
-             value = entry['value'];
-             final = entry['final'] ? true : false;
-             delimiter = entry['delimiter'] ? true : false;
-         }else{
-             invalid = true;
-         };
+        // handle escaping
+        if(escaped){
+            if(key=="}}"){
+                escaped = false;
+                value = "";
+                final = true;
+            }else if(key=="}"){
+                value = "}";
+            }else{
+                value = key;
+                final = true;
+            }
+            return
+        }else{
+            if(key=="{{"){
+                escaped = true;
+                value = "";
+                final = true;
+                delimiter = true;
+                return;
+            }else if(key=="{"){
+                value = "{";
+                return;
+            }
+        }
+
+        var lookupKey = wordStart ? '^' + key : key ;
+        var entry = hash[lookupKey] || hash[key];
+        var delimiter = false;
+        if(entry){
+            value = entry['value'];
+            final = entry['final'] ? true : false;
+            delimiter = entry['delimiter'] ? true : false;
+        }else{
+            invalid = true;
+        };
          
  		if(delimiter){
  			wordStart = true;
