@@ -9,8 +9,8 @@
     <script type="text/javascript" src="js/sawlajaan.js"></script>
     
     <style type="text/css">
-      #input {height: 300px; font-size:20px; padding: 10px; width:100%;}
-      #output {height: 300px; font-size:20px; padding: 10px; width:100%;}
+      #input {height: 600px; font-size:17px; padding: 10px; width:100%;}
+      #output {height: 600px; font-size:18px; padding: 10px; width:100%;}
       .title{text-align: center; width: 100%; margin-bottom: 35px;}
       .container{margin-top: 30px;}
     </style>
@@ -30,13 +30,31 @@
     <div class="well container">
     <h1 class="title">Sawlajaan صَوْلَجَانٌ</h1>
     <div class="row">
-      <div class="col-md-6 "><textarea class="form-control" id="input"></textarea></div>
+      <div class="col-md-6 "><textarea class="form-control" id="input">
+Sawlajaan Adaat'uN tusaa3iduka 3laY kitaabat'i al3arabiy#at'i be7oroofiN laateeney#at'iN
+{{ Sawlajaan is a tool to help you write Arabic in Latin alphabet using simple intuitive rules.}}
+
+w ymknk An tktb b3laamaat altshkeel Aw bdoonhaa
+{{You can write with or without diacritical marks}}
+
+kmaa ymknk An tktb be-alEnjleezyt'i hkz'aa :
+{{You can write English text and special characters without having them converted}}
+
+ymknk albd2 bt3deel alnS fee alSndooq alAysr w mshaahdt' alnteejt' 3lY aljht' almqaablt'
+{{Start by editing the text in the text box on the left and see the result on the other side.}}
+
+Aw onZr ElY alqwaa3d alkaamlt' b-alAsfl.
+{{Or scroll down for the complete list of writing rules.}}
+
+Ataman#aY An yakoona mufeedaaN. be-altwfeeq :)
+{{I hope you will find it useful. Good luck :) }}
+      </textarea></div>
       <div class="col-md-6"><textarea class="form-control" id="output" dir="rtl"></textarea></div>
     </div>
     <div id="rules">
       <h1>Rules :</h1>
       <dl class="dl-horizontal">
-        <dt>Letters:</dt><dd> A, b, t, th, j, 7, 5, d, z', r, z, s, sh, S, D, T, Z', 3, g, f, q, k, l, m, n, h, w, y</dd>
+        <dt>Letters:</dt><dd> A, b, t, th, j, 7, 5, d, z, r, z, s, sh, S, D, T, Z', 3, g, f, q, k, l, m, n, h, w, y</dd>
         <dt>Tashkeel:</dt><dd> letter + a , letter + e/i, letter + o/u</dd>
         <dt>Taa marboota:</dt><dd> t'</dd>
         <dt>Tanween:</dt><dd> uN, aN, iN/eN</dd>
@@ -45,10 +63,11 @@
         <dt>Alef without hamza:</dt><dd> a at the start of a word</dd>
         <dt>Alef maqsoora:</dt><dd> Y</dd>
         <dt>Hamza's:</dt><dd> 2, _2, @/@2</dd>
-        <dt>Shadda:</dt><dd> letter + *</dd>
+        <dt>Shadda:</dt><dd> letter + #</dd>
         <dt>waw aljamaa3a:</dt><dd> w-a / oo-a</dd>
         <dt>bel:</dt><dd> be-al</dd>
         <dt>combined letters: </dt><dd> when ignoring tashkeel e.g. seen-haa: s-h</dd>
+        <dt>English: </dt><dd> {{ English and special characters @,#,-,... }} </dd>
       </dl>
     </div>
   </div>
