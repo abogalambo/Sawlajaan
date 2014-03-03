@@ -202,6 +202,10 @@ Ataman#aY An yakoona mufeedaaN. be-altwfeeq :)
     var client = new ZeroClipboard($('#copy'));
     client.on( 'dataRequested', function (client, args) {
       client.setText($('#output').val());
+      $('#copy').html("Copied!");
+      window.setTimeout(function(){
+        $('#copy').html("Copy to Clipboard!");
+      }, 1000)
     });
   </script>
   </body>
