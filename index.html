@@ -13,6 +13,7 @@
     
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.js"></script>
     <script type="text/javascript" src="js/sawlajaan.js"></script>
+    <script type="text/javascript" src="js/ZeroClipboard.js"></script>
     
     <style type="text/css">
       #input {height: 600px; font-size:17px; padding: 10px; width:100%;}
@@ -24,6 +25,10 @@
       table.alph tr:first-child td{ border-top: 0px }
       .social{padding-bottom: 10px;}
       .addthis_counter.addthis_bubble_style {width: 62px!important;}
+      button#copy {margin-bottom: 10px; width:100%;}
+
+      /*#copy.zeroclipboard-is-hover { background-color:#eee; }*/
+      /*#copy.zeroclipboard-is-active { background-color:#aaa; }*/
     </style>
     
     <script>
@@ -42,19 +47,28 @@
     <h1 class="title">Sawlajaan صَوْلَجَانٌ</h1>
 
     <!-- AddThis Button BEGIN -->
-    <div class="social">
-    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-    <a class="addthis_button_preferred_1"></a>
-    <a class="addthis_button_preferred_2"></a>
-    <a class="addthis_button_preferred_3"></a>
-    <a class="addthis_button_preferred_4"></a>
-    <a class="addthis_button_compact"></a>
-    <a class="addthis_counter addthis_bubble_style"></a>
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="social">
+        <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+        <a class="addthis_button_preferred_1"></a>
+        <a class="addthis_button_preferred_2"></a>
+        <a class="addthis_button_preferred_3"></a>
+        <a class="addthis_button_preferred_4"></a>
+        <a class="addthis_button_compact"></a>
+        <a class="addthis_counter addthis_bubble_style"></a>
+        </div>
+        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52e659b670267229"></script>
+        <!-- AddThis Button END -->
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <button type="button" class="btn btn-primary" id="copy" name="copy" title="Click to copy to clipboard.">Copy to Clipboard!</button>
+      </div>
     </div>
-    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52e659b670267229"></script>
-    <!-- AddThis Button END -->
-  </div>
 
     <div class="row">
       <div class="col-md-6 "><textarea class="form-control" id="input">
@@ -183,5 +197,13 @@ Ataman#aY An yakoona mufeedaaN. be-altwfeeq :)
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+    ZeroClipboard.config( { swfPath: 'ZeroClipboard.swf' } );
+    var client = new ZeroClipboard($('#copy'));
+    client.on( 'dataRequested', function (client, args) {
+      alert('weewaa');
+      client.setText($('#output').val());
+    });
+  </script>
   </body>
 </html>
