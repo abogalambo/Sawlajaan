@@ -201,7 +201,6 @@ Ataman#aY An yakoona mufeedaaN. be-altwfeeq :)
     ZeroClipboard.config( { swfPath: 'ZeroClipboard.swf' } );
     var client = new ZeroClipboard($('#copy'));
     client.on( 'dataRequested', function (client, args) {
-      alert('weewaa');
       client.setText($('#output').val());
     });
   </script>
