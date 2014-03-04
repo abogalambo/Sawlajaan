@@ -256,8 +256,13 @@ $(document).ready(function($) {
 	
     var input = $('textarea#input');
     var output = $('textarea#output');
+    var instructions = $('div#instructions').html();
 
-    output.val(parser.processText(input.html()));
+    $('button#help').click(function(){
+        input.val(instructions);
+        output.val(parser.processText(instructions));
+    });
+
 	$(input).keyup(function(){
 		output.val(parser.processText($(this).val()));
 	});

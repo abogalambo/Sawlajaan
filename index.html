@@ -26,6 +26,7 @@
       .social{padding-bottom: 10px;}
       .addthis_counter.addthis_bubble_style {width: 62px!important;}
       button#copy {margin-bottom: 10px; width:100%;}
+      button#help {float: left; height: 70px; width: 70px; font-size: 40px}
 
       /*#copy.zeroclipboard-is-hover { background-color:#eee; }*/
       /*#copy.zeroclipboard-is-active { background-color:#aaa; }*/
@@ -44,11 +45,11 @@
   </head>
   <body>
     <div class="well container">
+    <button type="button" class="btn btn-info" id="help" name="help" title="need help?">?</button>
     <h1 class="title">Sawlajaan صَوْلَجَانٌ</h1>
 
     <!-- AddThis Button BEGIN -->
     <div class="row">
-
       <div class="col-md-6">
         <div class="social">
         <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
@@ -72,23 +73,7 @@
 
     <div class="row">
       <div class="col-md-6 "><textarea class="form-control" id="input">
-Sawlajaan Adaat' tsaa3dk 3lY ktaabt' al3rbyat' b7roof laateenyt'
-{{ Sawlajaan is a tool to help you write Arabic in Latin alphabet using simple intuitive rules.}}
 
-wa yumkinuka An0 taktuba bi3alaamaati alt#ashkeeli Aw0 bidoonihaa
-{{You can write with or without diacritical marks}}
-
-kmaa ymknk An tktb be-alEnjleezyt'i hkz'aa :
-{{You can write English text and special characters without having them converted}}
-
-ymknk albd2 bt3deel alnS fee alSndooq alAysr w mshaahdt' alnteejt' 3lY aljht' almqaablt'
-{{Start by editing the text in the text box on the left and see the result on the other side.}}
-
-Aw onZr ElY alqwaa3d alkaamlt' b-alAsfl.
-{{Or scroll down for the complete list of writing rules.}}
-
-Ataman#aY An yakoona mufeedaaN. be-altwfeeq :)
-{{I hope you will find it useful. Good luck :) }}
       </textarea></div>
       <div class="col-md-6"><textarea class="form-control" id="output" dir="rtl"></textarea></div>
     </div>
@@ -196,6 +181,25 @@ Ataman#aY An yakoona mufeedaaN. be-altwfeeq :)
         </table>
       </div>
     </div>
+  </div>
+  <div style="display:none;" id="instructions">
+Sawlajaan Adaat' tsaa3dk 3lY ktaabt' al3rbyat' b7roof laateenyt'
+{{ Sawlajaan is a tool to help you write Arabic in Latin alphabet using simple intuitive rules.}}
+
+wa yumkinuka An0 taktuba bi3alaamaati alt#ashkeeli Aw0 bidoonihaa
+{{You can write with or without diacritical marks}}
+
+kmaa ymknk An tktb be-alEnjleezyt'i hkz'aa :
+{{You can write English text and special characters without having them converted}}
+
+ymknk albd2 bt3deel alnS fee alSndooq alAysr w mshaahdt' alnteejt' 3lY aljht' almqaablt'
+{{Start by editing the text in the text box on the left and see the result on the other side.}}
+
+Aw onZr ElY alqwaa3d alkaamlt' b-alAsfl.
+{{Or scroll down for the complete list of writing rules.}}
+
+Ataman#aY An yakoona mufeedaaN. be-altwfeeq :)
+{{I hope you will find it useful. Good luck :) }}
   </div>
   <script type="text/javascript">
     ZeroClipboard.config( { swfPath: 'ZeroClipboard.swf' } );
